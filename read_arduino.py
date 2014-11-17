@@ -14,8 +14,8 @@ r_unwanted = re.compile("[\n\r]")
 
 while 1 :
     msg = ser.readline()
+    msg = r_unwanted.sub("", msg)
     body = json.dumps({"data": msg, "is_ax25": False})
-    body = r_unwanted.sub("", body)
     print body
 
     conn = httplib.HTTPConnection(os.environ['APRS_DASHBOARD_HOST'], os.environ['APRS_DASHBOARD_PORT'])
