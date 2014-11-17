@@ -11,8 +11,8 @@ installation running elsewhere.  The APRS Dashboard will aggregate and track the
 with the data.
 
 This project contains two resources:
- 1. Arduino sketch to read from the Radio Shield and print APRS messages to the serial port
- 1. Python script to read the APRS from the Arduino output and send them to an APRS Dashboard installation
+  1. Arduino sketch to read from the Radio Shield and print APRS messages to the serial port
+  1. Python script to read the APRS from the Arduino output and send them to an APRS Dashboard installation
 
 
 Arduino Sketch
@@ -26,10 +26,10 @@ Python Script
 **Note:*** This script is intended for use with the Raspberry Pi, so I've written it to use Python2.
 
 Use the following steps:
-1. Copy the script to the Raspberry Pi
-1. If you plan on running the script for an extended period, I suggest installing & running `screen`
-1. Set the following environment variables: `APRS_DASHBOARD_HOST` and `APRS_DASHBOARD_PORT`
-  1. ```export APRS_DASHBOARD_HOST="127.0.0.1"```
-  1. ```export APRS_DASHBOARD_PORT="3000"```
-1. Run the script: ```python read_arduino.py```
+ 1. Copy the script to the Raspberry Pi
+ 1. If you plan on running the script for an extended period, I suggest installing & running `screen`
+ 1. Set the following environment variables: `APRS_DASHBOARD_HOST` and `APRS_DASHBOARD_PORT`
+    1. ```export APRS_DASHBOARD_HOST="127.0.0.1"```
+    1. ```export APRS_DASHBOARD_PORT="3000"```
+ 1. Run the script: ```python read_arduino.py```
 
