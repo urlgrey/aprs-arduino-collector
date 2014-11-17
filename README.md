@@ -31,5 +31,7 @@ Use the following steps:
  1. Set the following environment variables: `APRS_DASHBOARD_HOST` and `APRS_DASHBOARD_PORT`
     1. ```export APRS_DASHBOARD_HOST="127.0.0.1"```
     1. ```export APRS_DASHBOARD_PORT="3000"```
+ 1. If an API key is required by the APRS Dashboard, then set the following:
+    1. ```export APRS_DASHBOARD_API_KEY="secret123"```
  1. Run the script: ```python read_arduino.py```
 
