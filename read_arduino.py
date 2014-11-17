@@ -10,9 +10,8 @@ ser = serial.Serial('/dev/ttyACM0', 4800)
 
 headers = {"Content-type": "application/json",
            "Accept": "application/json"}
-apiKey = os.environ['APRS_DASHBOARD_API_KEY']
-if apiKey ! "":
-  headers["X-API-KEY"] = apiKey
+if 'APRS_DASHBOARD_API_KEY' in os.environ:
+  headers["X-API-KEY"] = os.environ['APRS_DASHBOARD_API_KEY']
 
 r_unwanted = re.compile("[\n\r]")
 
