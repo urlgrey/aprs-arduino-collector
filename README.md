@@ -28,8 +28,8 @@ Python Script
 Use the following steps:
 1. Copy the script to the Raspberry Pi
 1. If you plan on running the script for an extended period, I suggest installing & running `screen`
-1. Set the following environment variables: APRS_DASHBOARD_HOST, APRS_DASHBOARD_PORT
-  1. export APRS_DASHBOARD_HOST="127.0.0.1"
-  1. APRS_DASHBOARD_PORT="3000"
-1. Run the script: python read_arduino.py
+1. Set the following environment variables: `APRS_DASHBOARD_HOST` and `APRS_DASHBOARD_PORT`
+  1. ```export APRS_DASHBOARD_HOST="127.0.0.1"```
+  1. ```export APRS_DASHBOARD_PORT="3000"```
+1. Run the script: ```python read_arduino.py```
 
